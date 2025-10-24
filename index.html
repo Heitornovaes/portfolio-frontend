@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Desenvolvedor</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div class="particles-container" id="particles-container"></div>
+<header class="header">
+    <nav class="nav container">
+        <a href="assets/images/logo.png" class="nav__logo">&lt;/HN&gt;</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Início</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projetos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contato</a>
+                </li>
+            </ul>
+
+            <div class="nav__actions">
+                <a href="https://github.com/Heitornovaes" target="_blank" class="nav__action-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/heitor-novaes-dos-santos-204779292/" target="_blank" class="nav__action-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="assets/Curriculo_HeitorNovaesDosSantos.pdf" download class="nav__action-link" aria-label="Baixar Currículo">
+                    <i class="fas fa-file-arrow-down"></i>
+                </a>
+            </div>
+            <div class="nav__close" id="nav-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+    <main class="main">
+    <section class="section section__hero" id="home">
+        
+        <div class="gradient-background">
+            <div class="gradient-sphere sphere-hero-1"></div>
+            <div class="gradient-sphere sphere-hero-2"></div>
+            <div class="gradient-sphere sphere-hero-3"></div>
+        </div>
+        <div class="glow"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+        <div class="container hero__container">
+            <h1 class="hero__title">&lt;/Heitor Novaes&gt;</h1> <p class="hero__subtitle">Desenvolvedor Web & Designer</p>
+        </div>
+    </section>
+
+        <section class="section section__about" id="about">
+            
+            <div class="gradient-background">
+                <div class="gradient-sphere sphere-about-1"></div>
+                <div class="gradient-sphere sphere-about-2"></div>
+                <div class="gradient-sphere sphere-about-3"></div>
+            </div>
+            <div class="grid-overlay"></div>
+            <div class="noise-overlay"></div>
+            <div class="container about__container">
+                <h2 class="section__title">Sobre Mim</h2>
+                <p class="about__text">
+                    Aos 21 anos, sou estudante de Sistemas de Informação (6º semestre na FIAP) e profissional de Marketing. Meu foco é construir pontes entre o desenvolvimento de soluções tecnológicas e a comunicação eficaz.
+
+Possuo conhecimentos em desenvolvimento e em ferramentas de design e performance (pacote Adobe - Photoshop, Illustrator, Premiere - e Google Ads). Disciplinado pela musculação, estou sempre aberto a novas ideias e pronto para me envolver em projetos desafiadores.
+                </p>
+
+              <div class="skills__container">
+                    <h3 class="skills__title">Minhas Skills</h3>
+                    <ul class="skills__list">
+                        <li class="skill__item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </li>
+                        <li class="skill__item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </li>
+                        <li class="skill__item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </li>
+                        <li class="skill__item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </li>
+
+                        <li class="skill__item">
+                            <i class="fas fa-palette"></i> 
+                            <span>Photoshop</span>
+                        </li>
+                        <li class="skill__item">
+                            <i class="fas fa-film"></i>
+                            <span>Premiere</span>
+                        </li>
+                        
+                        <li class="skill__item">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>Musculação</span>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+        </section>
+            </div>
+        </section>
+
+        <section class="section section__projects" id="projects">
+            
+            <div class="gradient-background">
+                <div class="gradient-sphere sphere-projects-1"></div>
+                <div class="gradient-sphere sphere-projects-2"></div>
+            </div>
+            <div class="grid-overlay"></div>
+            <div class="noise-overlay"></div>
+            <div class="container">
+                <h2 class="section__title">Meus Projetos</h2>
+                <div class="projects__grid">
+
+
+                    <article class="project__card">
+                        <div class="project__img-wrapper"> 
+                            <img src="assets/images/HS-Login.png" alt="Preview do App de Empréstimos" class="project__img">
+                            <img src="assets/images/HS.png" alt="Preview Animado do App" class="project__hover-img">
+                        </div>
+                        
+                        <div class="project__data">
+                            <h3 class="project__title">App de Gestão de Empréstimos</h3>
+                            <p class="project__description">
+                                Aplicação web para gerenciar empréstimos com cálculo de juros, cadastro de clientes, histórico de empréstimos, graficos de resultados, 
+                                usando HTML, CSS e JavaScript.
+                            </p>
+                            
+                            <div class="project__buttons-group">
+                                <a href="https://hs-financeira-demo.vercel.app/login" target="_blank" class="project__button">
+                                    Ver Demo <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="[LINK_REPOSITORIO_AQUI]" target="_blank" class="project__button">
+                                    Repositório <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </article>
+
+                   <article class="project__card">
+                        <div class="project__img-wrapper"> 
+                            <img src="assets/images/ppm.jpg" alt="Preview do App de Empréstimos" class="project__img">
+                            
+                            <img src="assets/images/ppm-hover.jpg" alt="Preview Animado do App" class="project__hover-img">
+                        </div>
+                        
+                        <div class="project__data">
+                            <h3 class="project__title">PPM - Natura</h3>
+                            <p class="project__description">
+                                API RESTful para o sistema de Gestão de Portfólio de Projetos (PPM) da Eurofarma. Este projeto é distribuído como uma imagem Docker pronta para execução, contendo a aplicação backend completa.
+                            </p>
+                            
+                            <div class="project__buttons-group">
+                                <a href="https://github.com/LeonardoFoL/ppm-api" target="_blank" class="project__button">
+                                    Repositório <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </article>
+
+                    </div>
+            </div>
+        </section>
+
+        <section class="section section__contact" id="contact">
+
+            <div class="gradient-background">
+                <div class="gradient-sphere sphere-contact-1"></div>
+                <div class="gradient-sphere sphere-contact-2"></div>
+            </div>
+            <div class="section__overlay"></div>
+            <div class="container contact__container">
+                <h2 class="section__title">Entre em Contato</h2>
+                
+                <form class="contact__form" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nome</label>
+                        <input type="text" id="name" name="name" class="form__input" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="Digite seu melhor email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" class="form__input" placeholder="O que você gostaria de dizer?" required></textarea>
+                    </div>
+                    
+                    <p class="contact__message" id="contact-message"></p>
+
+                    <button type="submit" class="button button--flex">
+                        Enviar Mensagem <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__copy">&copy; 2025 Heitor Novaes dos Santos. Todos os direitos reservados.</p>
+            </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    
+    <script src="https://kit.fontawesome.com/91369c28dc.js" crossorigin="anonymous"></script>
+</body>
+</html>
