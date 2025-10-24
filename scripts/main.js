@@ -204,7 +204,7 @@ const contactMessage = document.getElementById('contact-message');
 const submitButton = contactForm.querySelector('button[type="submit"]');
 
 
-const API_URL = 'http://localhost:8080/api/contact';
+const API_URL = 'https://portfolio-backend-heitor.onrender.com/api/contact';
 
 const sendEmail = (e) => {
     
