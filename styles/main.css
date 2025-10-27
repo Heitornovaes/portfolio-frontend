@@ -87,7 +87,7 @@ img {
     background-clip: text;
 }
 
-/* ==================== BOTÕES ==================== */
+/* BOTÕES */
 .button {
     display: inline-block;
     background-color: var(--primeira-cor);
@@ -113,7 +113,7 @@ img {
     gap: .5rem;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 .header {
     width: 100%;
     background-color: transparent;
@@ -171,7 +171,7 @@ img {
     cursor: pointer;
 }
 
-/* ===== NAVBAR (ANIMAÇÃO NO SCROLL) ===== */
+/* NAVBAR */
 
 .header.scroll-header {
     background-color: #050505; 
@@ -295,7 +295,7 @@ img {
 }
 
 
-/*  SKILLS (SOBRE MIM) */
+/*  SKILLS */
 .skills__container {
 
     margin-top: 4rem; 
@@ -308,7 +308,7 @@ img {
     color: #E0E0E0;
 }
 
-/* A grade que segura os ícones */
+/* grade que segura os ícones */
 .skills__list {
     display: flex;
     flex-wrap: wrap; 
@@ -558,7 +558,6 @@ textarea.form__input {
 
 /* RESPONSIVIDADE (MOBILE) */
 
-
 @media screen and (max-width: 1024px) {
     .nav__menu {
         position: fixed;
@@ -702,7 +701,7 @@ textarea.form__input {
     pointer-events: none; 
 }
 
-/* Efeitos especiais SÓ do Hero */
+/* Efeitos especiais do Hero */
 
 .glow {
     position: absolute;

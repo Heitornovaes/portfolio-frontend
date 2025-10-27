@@ -44,7 +44,7 @@ const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close');
 
-/* === MOSTRAR MENU === */
+/* MOSTRAR MENU */
 
 if (navToggle) {
     navToggle.addEventListener('click', () => {
@@ -53,7 +53,7 @@ if (navToggle) {
     });
 }
 
-/* === ESCONDER MENU === */
+/* ESCONDER MENU  */
 
 if (navClose) {
     navClose.addEventListener('click', () => {
@@ -62,7 +62,7 @@ if (navClose) {
     });
 }
 
-/* ==================== REMOVER MENU AO CLICAR NO LINK ==================== */
+/* REMOVER MENU AO CLICAR NO LINK */
 
 const navLinks = document.querySelectorAll('.nav__link');
 
@@ -75,8 +75,7 @@ navLinks.forEach(n => n.addEventListener('click', linkAction));
 
 
 
-/* ========= EFEITO DE PARTÍCULAS (MODIFICADO) ========= */
-
+/* EFEITO DE PARTÍCULAS */
 
 const particlesContainer = document.getElementById('particles-container');
 
@@ -97,17 +96,17 @@ function createParticle() {
     particle.style.width = `${size}px`;
     particle.style.height = `${size}px`;
     
-    // Initial position
+    
     resetParticle(particle);
     
     particlesContainer.appendChild(particle);
     
-    // Animate
+
     animateParticle(particle);
 }
 
 function resetParticle(particle) {
-    // Random position
+   
     const posX = Math.random() * 100;
     const posY = Math.random() * 100;
     
@@ -122,10 +121,10 @@ function resetParticle(particle) {
 }
 
 function animateParticle(particle) {
-    // Initial position
+    
     const pos = resetParticle(particle);
     
-    // Random animation properties
+    
     
     const duration = Math.random() * 5 + 5; 
     const delay = Math.random() * 5;
@@ -197,7 +196,7 @@ document.addEventListener('mousemove', (e) => {
     });
 });
 
-/* ==================== ENVIO DO FORMULÁRIO DE CONTATO ==================== */
+/* ENVIO DO FORMULÁRIO DE CONTATO */
 
 const contactForm = document.getElementById('contact-form');
 const contactMessage = document.getElementById('contact-message');
@@ -210,25 +209,25 @@ const sendEmail = (e) => {
     
     e.preventDefault();
 
-    // 2. Mostra "Enviando..." e desativa o botão
+    
     contactMessage.textContent = 'Enviando mensagem...';
     contactMessage.classList.remove('color-success', 'color-error');
     contactMessage.classList.add('show-message');
     submitButton.disabled = true;
 
-    // 3. Pega os valores dos campos
+    
     const name = contactForm.querySelector('#name').value;
     const email = contactForm.querySelector('#email').value;
     const message = contactForm.querySelector('#message').value;
 
-    // 4. Cria o objeto JSON (deve ser igual ao seu 'ContactRequest' no Java)
+    
     const formData = {
         name: name,
         email: email,
         message: message
     };
 
-    // 5. Envia os dados para a API
+    
     fetch(API_URL, {
         method: 'POST',
         headers: {
@@ -238,30 +237,30 @@ const sendEmail = (e) => {
     })
     .then(response => {
         if (response.ok) {
-            // 6a. Sucesso
+            
             contactMessage.textContent = 'Mensagem enviada com sucesso! Obrigado.';
             contactMessage.classList.add('color-success');
-            contactForm.reset(); // Limpa o formulário
+            contactForm.reset(); 
         } else {
-            // 6b. Erro (ex: API caiu)
+            
             throw new Error('Falha no envio.');
         }
     })
     .catch(error => {
-        // 6c. Erro (ex: rede)
+        
         contactMessage.textContent = 'Ops! Algo deu errado. Tente novamente mais tarde.';
         contactMessage.classList.add('color-error');
     })
     .finally(() => {
-        // 7. Reativa o botão
+       
         submitButton.disabled = false;
 
-        // Esconde a mensagem depois de 5 segundos
+        
         setTimeout(() => {
             contactMessage.classList.remove('show-message');
         }, 5000);
     });
 };
 
-// 8. "Escuta" o evento de submit do formulário
+
 contactForm.addEventListener('submit', sendEmail);
