@@ -63,7 +63,7 @@ img {
 
 /* CLASSES REUTILIZÁVEIS (Layout) */
 .container {
-    max-width: 1024px;
+    max-width: 1250px; /* Era 1024px, aumentei para dar espaço */
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5rem;
@@ -171,8 +171,7 @@ img {
     cursor: pointer;
 }
 
-/* NAVBAR */
-
+/* NAVBAR SCROLL */
 .header.scroll-header {
     background-color: #050505; 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -227,9 +226,7 @@ img {
     background-color: var(--primeira-cor);
 }
 
-
 /* ESTILOS DAS SEÇÕES */
-
 .section__overlay {
     position: absolute;
     top: 0;
@@ -278,11 +275,6 @@ img {
     background: transparent;
 }
 
-/* Seção PROJETOS */
-.section__projects {
-    background: transparent;
-}
-
 .about__container {
     text-align: center;
     max-width: 1200px;
@@ -294,10 +286,8 @@ img {
     line-height: 1.5; 
 }
 
-
-/*  SKILLS */
+/* SKILLS */
 .skills__container {
-
     margin-top: 4rem; 
 }
 
@@ -308,7 +298,6 @@ img {
     color: #E0E0E0;
 }
 
-/* grade que segura os ícones */
 .skills__list {
     display: flex;
     flex-wrap: wrap; 
@@ -316,23 +305,16 @@ img {
     gap: 1.5rem; 
 }
 
-
 .skill__item {
     display: flex;
     flex-direction: column; 
     align-items: center;
     gap: 0.75rem; 
-    
-  
     background-color: rgba(255, 255, 255, 0.05); 
     border: 1px solid rgba(255, 255, 255, 0.1);
-    
     padding: 1.25rem;
     border-radius: 1rem;
-    
-   
     width: 120px; 
-    
     transition: background-color .3s, transform .3s;
 }
 
@@ -341,16 +323,13 @@ img {
     transform: translateY(-5px); 
 }
 
-
 .skill__item i {
     font-size: 2.5rem; 
-    
     background: linear-gradient(to right, #ffffff, #c953ec); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
 
 .skill__item span {
     font-size: var(--normal-font-size);
@@ -358,39 +337,24 @@ img {
     color: #CCCCCC; 
 }
 
-/* Seção CONTATO */
-.section__contact {
-    background-image: url('../assets/images/contact-background.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+/* Seção PROJETOS (Grid Vertical Padrão) */
+.section__projects {
+    background: transparent;
 }
-
-.section__contact .section__title,
-.section__contact .form__label {
-    color: #FFFFFF;
-}
-
-/* PROJETOS */
 
 .projects__grid {
-  display: grid;
-  gap: 20px;
-  
-  width: 100%; 
-  justify-content: center;
-  grid-template-columns: 1fr;
-
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha */
+    justify-content: center; /* Centraliza tudo */
+    gap: 30px; /* Espaço entre os cards */
+    width: 100%;
 }
 
-/* 2. Telas médias (Tablets) */
 @media (min-width: 768px) {
   .projects__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* 3. Telas grandes (Desktop) */
 @media (min-width: 1024px) {
   .projects__grid {
     grid-template-columns: repeat(4, 1fr);
@@ -402,13 +366,12 @@ img {
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: relative; 
+    position: relative;
     transition: transform .3s ease, box-shadow .3s ease;
     
-    width: 380px; 
+    width: 380px; /* Largura fixa */
     min-height: 520px;
-    
-    height: 100%; 
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -450,13 +413,8 @@ img {
     transition: opacity .4s ease-in-out;
 }
 
-.project__card:hover .project__img {
-    opacity: 0;
-}
-
-.project__card:hover .project__hover-img {
-    opacity: 1;
-}
+.project__card:hover .project__img { opacity: 0; }
+.project__card:hover .project__hover-img { opacity: 1; }
 
 .project__hover-img {
     transform: scale(1.05);
@@ -467,8 +425,6 @@ img {
     opacity: 1;
     transform: scale(1);
 }
-
-/* DADOS INTERNOS DO CARD */
 
 .project__data {
     padding: 1.5rem; 
@@ -496,13 +452,11 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
-   
     transition: transform .3s ease;
 }
 
 .project__buttons-group {
     margin-top: auto; 
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -514,8 +468,18 @@ img {
     transform: translateX(3px);
 }
 
+/* Seção CONTATO */
+.section__contact {
+    background-image: url('../assets/images/contact-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
 
-/* CONTATO */
+.section__contact .section__title,
+.section__contact .form__label {
+    color: #FFFFFF;
+}
 
 .contact__form {
     max-width: 600px;
@@ -523,10 +487,6 @@ img {
     margin-right: auto;
     display: grid;
     gap: 2rem;
-}
-
-.form__group {
-    
 }
 
 .form__label {
@@ -548,9 +508,7 @@ img {
     transition: border-color .3s ease, background-color .3s ease;
 }
 
-.form__input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
+.form__input::placeholder { color: rgba(255, 255, 255, 0.6); }
 
 .form__input:focus {
     border-color: var(--primeira-cor); 
@@ -567,13 +525,22 @@ textarea.form__input {
     width: 100%;
 }
 
-.form__input:invalid {
-    box-shadow: none;
+.form__input:invalid { box-shadow: none; }
+
+.contact__message {
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transition: opacity .3s;
 }
 
+.show-message { opacity: 1; }
+.color-success { color: #4CAF50; }
+.color-error { color: #F44336; }
 
-/* RESPONSIVIDADE (MOBILE) */
-
+/* RESPONSIVIDADE (MOBILE - MENU) */
 @media screen and (max-width: 1024px) {
     .nav__menu {
         position: fixed;
@@ -591,10 +558,7 @@ textarea.form__input {
         z-index: var(--z-fixed);
     }
     
-    .nav__toggle,
-    .nav__close {
-        display: block;
-    }
+    .nav__toggle, .nav__close { display: block; }
     
     .nav__close {
         position: absolute;
@@ -615,66 +579,22 @@ textarea.form__input {
         gap: 2rem;
     }
     
-    .nav__link,
-    .nav__action-link {
+    .nav__link, .nav__action-link {
         font-size: var(--h1-font-size);
         color: #FFFFFF;
     }
-    .nav__link:hover,
-    .nav__action-link:hover {
+    .nav__link:hover, .nav__action-link:hover {
         color: var(--primeira-cor);
     }
     
-    .show-menu {
-        right: 0;
-    }
+    .show-menu { right: 0; }
 } 
 
+.nav__toggle { color: var(--cor-titulo); }
+.header:not(.scroll-header) .nav__toggle { color: #FFFFFF; }
+.scroll-header .nav__toggle { color: #FFFFFF; }
 
-/* Ajustes para a Navbar no Mobile */
-
-.nav__toggle {
-    color: var(--cor-titulo);
-}
-.header:not(.scroll-header) .nav__toggle {
-    color: #FFFFFF;
-}
-
-.scroll-header .nav__toggle {
-    color: #FFFFFF;
-}
-
-
-/* MENSAGEM DE CONTATO */
-.contact__message {
-    font-size: var(--normal-font-size);
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    
-    opacity: 0;
-    transition: opacity .3s;
-}
-
-
-.show-message {
-    opacity: 1;
-}
-
-
-.color-success {
-    color: #4CAF50; 
-}
-
-
-.color-error {
-    color: #F44336; 
-}
-
-
-/* FUNDO ANIMADO */
-
-
+/* FUNDO ANIMADO E EFEITOS */
 .gradient-background {
     position: absolute;
     top: 0;
@@ -718,7 +638,6 @@ textarea.form__input {
 }
 
 /* Efeitos especiais do Hero */
-
 .glow {
     position: absolute;
     width: 40vw;
@@ -732,7 +651,6 @@ textarea.form__input {
     filter: blur(30px);
     pointer-events: none;
 }
-
 
 .particles-container {
     position: fixed; 
@@ -753,164 +671,81 @@ textarea.form__input {
 }
 
 @keyframes pulse {
-    0% {
-        opacity: 0.9;
-        transform: translate(-50%, -50%) scale(0.9);
-    }
-    100% {
-        opacity: 0.9;
-        transform: translate(-50%, -50%) scale(1.1);
-    }
+    0% { opacity: 0.9; transform: translate(-50%, -50%) scale(0.9); }
+    100% { opacity: 0.9; transform: translate(-50%, -50%) scale(1.1); }
 }
 
-
-/* ESFERAS DA SEÇÃO HERO */
-
+/* Animações das Esferas */
 .sphere-hero-1 {
-    width: 30vw; 
-    height: 30vw;
+    width: 30vw; height: 30vw;
     background: linear-gradient(40deg, rgba(255, 0, 128, 0.8), rgba(255, 102, 0, 0.4));
-    top: 5%;    
-    right: 4%;  
+    top: 5%; right: 4%;
     animation: float-hero-1 18s ease-in-out infinite alternate;
 }
-
 .sphere-hero-2 {
-    width: 40vw; 
-    height: 40vw;
+    width: 40vw; height: 40vw;
     background: linear-gradient(240deg, rgba(72, 0, 255, 0.8), rgba(0, 183, 255, 0.4));
-    bottom: 20%;
-    left: 6%;
+    bottom: 20%; left: 6%;
     animation: float-hero-2 15s ease-in-out infinite alternate;
 }
-
 .sphere-hero-3 {
-    width: 25vw; 
-    height: 25vw;
+    width: 25vw; height: 25vw;
     background: linear-gradient(120deg, rgba(133, 89, 255, 0.5), rgba(98, 216, 249, 0.637));
-    top: 35%;
-    left: 40%;
+    top: 35%; left: 40%;
     animation: float-hero-3 22s ease-in-out infinite alternate;
 }
-
-@keyframes float-hero-1 {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(-5%, 10%) scale(1.1); }
-}
-
-@keyframes float-hero-2 {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(10%, -5%) scale(1.15); }
-}
-
-@keyframes float-hero-3 {
-    0% { transform: translate(0, 0) scale(1); opacity: 0.3; }
-    100% { transform: translate(5%, 5%) scale(1.05); opacity: 0.6; }
-}
-
-
-
-/* ESFERAS DAS OUTRAS SEÇÕES */
-
 .sphere-about-1 {
-    width: 25vw; 
-    height: 25vw;
+    width: 25vw; height: 25vw;
     background: linear-gradient(40deg, rgba(255, 0, 157, 0.6), rgba(223, 65, 125, 0.3));
-    top: 10%;   
-    left: 2%;   
+    top: 10%; left: 2%;
     animation: float-about-1 20s ease-in-out infinite alternate;
 }
-
 .sphere-about-2 {
-    width: 30vw; 
-    height: 30vw;
+    width: 30vw; height: 30vw;
     background: linear-gradient(240deg, rgba(0, 190, 248, 0.5), rgba(1, 38, 56, 0.781));
-    bottom: 15%;
-    right: 2%;
+    bottom: 15%; right: 2%;
     animation: float-about-2 18s ease-in-out infinite alternate;
 }
-
 .sphere-about-3 {
-    width: 15vw;
-    height: 15vw;
+    width: 15vw; height: 15vw;
     background: linear-gradient(240deg, rgba(180, 226, 11, 0.425), rgba(200, 255, 0, 0.301));
-    bottom: 15%;
-    right: 45%;
+    bottom: 15%; right: 45%;
     animation: float-about-2 18s ease-in-out infinite alternate;
 }
-
-
-@keyframes float-about-1 {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(5%, 5%) scale(1.1); }
-}
-@keyframes float-about-2 {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(5%, -5%) scale(1.1); }
-}
-
-@keyframes float-about-3 {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(5%, -5%) scale(1.1); }
-}
-
-/* SEÇÃO PROJETOS */
-
 .sphere-projects-1 {
-    width: 30vw; 
-    height: 30vw;
+    width: 30vw; height: 30vw;
     background: linear-gradient(40deg, rgba(255, 0, 128, 0.7), rgba(255, 102, 0, 0.3));
-    top: 18%;    
-    left: 10%;  
+    top: 18%; left: 10%;
     animation: float-projects-1 22s ease-in-out infinite alternate;
 }
-
 .sphere-projects-2 {
-    width: 30vw; 
-    height: 30vw;
+    width: 30vw; height: 30vw;
     background: linear-gradient(240deg, rgba(72, 0, 255, 0.4), rgba(0, 183, 255, 0.2));
-    top: 10%;    
-    right: 5%;  
+    top: 10%; right: 5%;
     animation: float-projects-2 17s ease-in-out infinite alternate;
 }
-
-@keyframes float-projects-1 {
-    0% { transform: translate(0, 0) scale(1.1); }
-    100% { transform: translate(5%, -5%) scale(1); }
-}
-@keyframes float-projects-2 {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(-5%, 5%) scale(1.1); }
-}
-
-/* SEÇÃO CONTATO */
-
 .sphere-contact-1 {
-    width: 35vw; 
-    height: 35vw;
+    width: 35vw; height: 35vw;
     background: linear-gradient(40deg, rgba(255, 0, 128, 0.9), rgba(255, 102, 0, 0.5));
-    bottom: 10%; 
-    left: 10%;  
+    bottom: 10%; left: 10%;
     animation: float-contact-1 15s ease-in-out infinite alternate;
 }
-
 .sphere-contact-2 {
-    width: 30vw;
-    height: 30vw;
+    width: 30vw; height: 30vw;
     background: linear-gradient(120deg, rgba(133, 89, 255, 0.7), rgba(98, 216, 249, 0.4));
-    top: 10%; 
-    right: 10%; 
+    top: 10%; right: 10%;
     animation: float-contact-2 19s ease-in-out infinite alternate;
 }
 
-@keyframes float-contact-1 {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(5%, -5%) scale(1.1); }
-}
-@keyframes float-contact-2 {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(-5%, 5%) scale(1.1); }
-}
+@keyframes float-hero-1 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-5%, 10%) scale(1.1); } }
+@keyframes float-hero-2 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(10%, -5%) scale(1.15); } }
+@keyframes float-hero-3 { 0% { transform: translate(0, 0) scale(1); opacity: 0.3; } 100% { transform: translate(5%, 5%) scale(1.05); opacity: 0.6; } }
+@keyframes float-about-1 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(5%, 5%) scale(1.1); } }
+@keyframes float-about-2 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(5%, -5%) scale(1.1); } }
+@keyframes float-projects-1 { 0% { transform: translate(0, 0) scale(1.1); } 100% { transform: translate(5%, -5%) scale(1); } }
+@keyframes float-projects-2 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-5%, 5%) scale(1.1); } }
+@keyframes float-contact-1 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(5%, -5%) scale(1.1); } }
+@keyframes float-contact-2 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-5%, 5%) scale(1.1); } }
 
 
 /* FOOTER */
@@ -918,8 +753,175 @@ textarea.form__input {
     border-top: 1px solid rgba(255, 255, 255, 0.1); 
     padding: 3rem 0;
 }
-
 .footer__copy {
     text-align: center;
     color: #888888;
+}
+
+/* ======================================================= */
+/* === SEÇÃO DE DESIGNS (LAYOUT SLIDER HORIZONTAL) === */
+/* ======================================================= */
+
+.designs-section {
+    padding: 6rem 0 4rem;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Evita rolagem horizontal da página inteira */
+}
+
+/* Container mais largo para aproveitar a tela */
+.container-fluid {
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 20;
+}
+
+/* === CABEÇALHO DA CATEGORIA (Título + Setas da Linha) === */
+.category-wrapper {
+    margin-bottom: 4rem; /* Espaço entre a fileira de posts e a de vídeos */
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-right: 1rem;
+}
+
+.category-header h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    border-left: 4px solid var(--primeira-cor); /* Detalhe colorido ao lado do título */
+    padding-left: 1rem;
+}
+
+/* === TRILHO HORIZONTAL (Onde os cards deslizam) === */
+.horizontal-track {
+    display: flex;
+    gap: 30px; /* Espaço entre os cards */
+    overflow-x: auto;
+    padding-bottom: 20px; /* Espaço para a sombra não cortar */
+    scroll-behavior: smooth;
+    
+    /* Esconde a barra de rolagem */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    
+    /* Alinhamento */
+    align-items: flex-start;
+}
+.horizontal-track::-webkit-scrollbar { display: none; }
+
+/* === O CARD (Tamanho Fixo) === */
+.design-card {
+    /* MÁGICA: flex: 0 0 auto impede o card de encolher! */
+    flex: 0 0 auto; 
+    
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform .3s ease;
+    
+    /* Largura fixa para manter consistência */
+    width: 320px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.design-card:hover {
+    transform: translateY(-5px);
+}
+
+/* === PROPORÇÕES === */
+
+/* Card Curto (Posts) - Proporção 4:5 */
+.card-short {
+    aspect-ratio: 4 / 5;
+}
+
+/* Card Alto (Vídeos) - Proporção 9:16 */
+.card-tall {
+    aspect-ratio: 9 / 16;
+}
+
+/* === CONTEÚDO TELA CHEIA (FULL) === */
+.design-card--full .carousel-wrapper,
+.design-card--full .video-container,
+.design-card--full .design-image {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.design-card--full img,
+.design-card--full video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche tudo */
+    border-radius: 1rem;
+}
+
+/* === BOTÕES DE NAVEGAÇÃO DA FILEIRA (Topo direito) === */
+.row-navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.row-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-btn:hover {
+    background: var(--primeira-cor);
+    border-color: var(--primeira-cor);
+}
+
+/* === BOTÕES INTERNOS DO CARROSSEL (Dentro do Card) === */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+}
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.carousel-container::-webkit-scrollbar { display: none; }
+
+.carousel-container img {
+    flex: 0 0 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
 }
