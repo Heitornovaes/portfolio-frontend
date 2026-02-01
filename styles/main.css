@@ -799,37 +799,26 @@ textarea.form__input {
     padding-left: 1rem;
 }
 
-/* === TRILHO HORIZONTAL (Onde os cards deslizam) === */
 .horizontal-track {
-    display: flex;
-    gap: 30px; /* Espaço entre os cards */
-    overflow-x: auto;
-    padding-bottom: 20px; /* Espaço para a sombra não cortar */
-    scroll-behavior: smooth;
-    
-    /* Esconde a barra de rolagem */
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
-    
-    /* Alinhamento */
+    display: flex !important;      
+    flex-wrap: nowrap !important;  
+    overflow-x: auto !important;   
+    gap: 30px;
+    width: 100%;
     align-items: flex-start;
+    scrollbar-width: none; 
 }
 .horizontal-track::-webkit-scrollbar { display: none; }
 
 /* === O CARD (Tamanho Fixo) === */
 .design-card {
-    /* MÁGICA: flex: 0 0 auto impede o card de encolher! */
-    flex: 0 0 auto; 
-    
-    background-color: #FFFFFF;
+    flex: 0 0 auto !important;     /* OBRIGATÓRIO */
+    width: 320px !important;       /* OBRIGATÓRIO */
+    background-color: #222;        /* Fundo escuro pra ver se carrega */
     border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     position: relative;
-    transition: transform .3s ease;
-    
-    /* Largura fixa para manter consistência */
-    width: 320px; 
+    overflow: hidden;
+    height: auto;
     display: flex;
     flex-direction: column;
 }

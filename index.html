@@ -7,67 +7,54 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<div class="particles-container" id="particles-container"></div>
-<header class="header">
-    <nav class="nav container">
-        <a href="" class="nav__logo">&lt;/HN&gt;</a>
+    
+    <div class="particles-container" id="particles-container"></div>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">Início</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">Sobre</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#projects" class="nav__link">Projetos</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">Contato</a>
-                </li>
-            </ul>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">&lt;/HN&gt;</a>
 
-            <div class="nav__actions">
-                <a href="https://github.com/Heitornovaes" target="_blank" class="nav__action-link" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/heitor-novaes-dos-santos-204779292/" target="_blank" class="nav__action-link" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="assets/Curriculo_HeitorNovaesDosSantos.pdf" download class="nav__action-link" aria-label="Baixar Currículo">
-                    <i class="fas fa-file-arrow-down"></i>
-                </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Início</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projetos</a></li>
+                    <li class="nav__item"><a href="#designs" class="nav__link">Galeria</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                </ul>
+
+                <div class="nav__actions">
+                    <a href="https://github.com/Heitornovaes" target="_blank" class="nav__action-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/heitor-novaes-dos-santos-204779292/" target="_blank" class="nav__action-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="assets/Curriculo_HeitorNovaesDosSantos.pdf" download class="nav__action-link"><i class="fas fa-file-arrow-down"></i></a>
+                </div>
+                
+                <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
             </div>
-            <div class="nav__close" id="nav-close">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
 
-        <div class="nav__toggle" id="nav-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-</header>
+            <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
 
     <main class="main">
-    <section class="section section__hero" id="home">
         
-        <div class="gradient-background">
-            <div class="gradient-sphere sphere-hero-1"></div>
-            <div class="gradient-sphere sphere-hero-2"></div>
-            <div class="gradient-sphere sphere-hero-3"></div>
-        </div>
-        <div class="glow"></div>
-        <div class="grid-overlay"></div>
-        <div class="noise-overlay"></div>
-        <div class="container hero__container">
-            <h1 class="hero__title">&lt;/Heitor Novaes&gt;</h1> <p class="hero__subtitle">Desenvolvedor Web & Designer</p>
-        </div>
-    </section>
+        <section class="section section__hero" id="home">
+            <div class="gradient-background">
+                <div class="gradient-sphere sphere-hero-1"></div>
+                <div class="gradient-sphere sphere-hero-2"></div>
+                <div class="gradient-sphere sphere-hero-3"></div>
+            </div>
+            <div class="glow"></div>
+            <div class="grid-overlay"></div>
+            <div class="noise-overlay"></div>
+            
+            <div class="container hero__container">
+                <h1 class="hero__title">&lt;/Heitor Novaes&gt;</h1> 
+                <p class="hero__subtitle">Desenvolvedor Web & Designer</p>
+            </div>
+        </section>
 
         <section class="section section__about" id="about">
-            
             <div class="gradient-background">
                 <div class="gradient-sphere sphere-about-1"></div>
                 <div class="gradient-sphere sphere-about-2"></div>
@@ -75,291 +62,239 @@
             </div>
             <div class="grid-overlay"></div>
             <div class="noise-overlay"></div>
+            
             <div class="container about__container">
                 <h2 class="section__title">Sobre Mim</h2>
                 <p class="about__text">
-                    Aos 21 anos, sou estudante de Sistemas de Informação (6º semestre na FIAP) e profissional de Marketing. Meu foco é construir pontes entre o desenvolvimento de soluções tecnológicas e a comunicação eficaz.
-
-Possuo conhecimentos em desenvolvimento e em ferramentas de design e performance (pacote Adobe - Photoshop, Illustrator, Premiere - e Google Ads). Disciplinado pela musculação, estou sempre aberto a novas ideias e pronto para me envolver em projetos desafiadores.
+                    Aos 21 anos, sou estudante de Sistemas de Informação (7º semestre na FIAP) e profissional de Marketing. Meu foco é construir pontes entre o desenvolvimento de soluções tecnológicas e a comunicação eficaz.
+                    Possuo conhecimentos em desenvolvimento e em ferramentas de design e performance (pacote Adobe - Photoshop, Illustrator, Premiere - e Google Ads). Disciplinado pela musculação, estou sempre aberto a novas ideias e pronto para me envolver em projetos desafiadores.
                 </p>
 
-              <div class="skills__container">
+                <div class="skills__container">
                     <h3 class="skills__title">Minhas Skills</h3>
                     <ul class="skills__list">
-                        <li class="skill__item">
-                            <i class="fab fa-java"></i>
-                            <span>Java</span>
-                        </li>
-                        <li class="skill__item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </li>
-                        <li class="skill__item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </li>
-                        <li class="skill__item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </li>
-
-                        <li class="skill__item">
-                            <i class="fas fa-palette"></i> 
-                            <span>Photoshop</span>
-                        </li>
-                        <li class="skill__item">
-                            <i class="fas fa-film"></i>
-                            <span>Premiere</span>
-                        </li>
-                        
-                        <li class="skill__item">
-                            <i class="fas fa-dumbbell"></i>
-                            <span>Musculação</span>
-                        </li>
+                        <li class="skill__item"><i class="fab fa-java"></i><span>Java</span></li>
+                        <li class="skill__item"><i class="fab fa-python"></i><span>Python</span></li>
+                        <li class="skill__item"><i class="fab fa-html5"></i><span>HTML5</span></li>
+                        <li class="skill__item"><i class="fab fa-github"></i><span>GitHub</span></li>
+                        <li class="skill__item"><i class="fas fa-palette"></i><span>Photoshop</span></li>
+                        <li class="skill__item"><i class="fas fa-film"></i><span>Premiere</span></li>
+                        <li class="skill__item"><i class="fas fa-dumbbell"></i><span>Musculação</span></li>
                     </ul>
                 </div>
-                </div>
-        </section>
             </div>
         </section>
 
         <section class="section section__projects" id="projects">
-    <div class="gradient-background">
-        <div class="gradient-sphere sphere-projects-1"></div>
-        <div class="gradient-sphere sphere-projects-2"></div>
-    </div>
-    <div class="grid-overlay"></div>
-    <div class="noise-overlay"></div>
+            <div class="gradient-background">
+                <div class="gradient-sphere sphere-projects-1"></div>
+                <div class="gradient-sphere sphere-projects-2"></div>
+            </div>
+            <div class="grid-overlay"></div>
+            <div class="noise-overlay"></div>
 
-    <div class="container">
-        <h2 class="section__title">Meus Projetos</h2>
+            <div class="container">
+                <h2 class="section__title">Meus Projetos</h2>
 
-        <div class="projects__grid">
+                <div class="projects__grid">
+                    
+                    <article class="project__card">
+                        <div class="project__img-wrapper">
+                            <img src="assets/images/my_login.png" alt="Capa My Finance" class="project__img">
+                            <img src="assets/images/My-dash.png" alt="Preview My Finance" class="project__hover-img">
+                        </div>
+                        <div class="project__data">
+                            <h3 class="project__title">My Finance</h3>
+                            <p class="project__description">
+                                O My Finance é um SaaS completo de gestão financeira pessoal (PWA) com controle de gastos, cartões de crédito, investimentos, metas e modo privacidade. Desenvolvido em HTML/JS Puro e Supabase.
+                            </p>
+                            <div class="project__buttons-group">
+                                 </div>
+                        </div>
+                    </article>
 
-            <article class="project__card">
-                <div class="project__img-wrapper">
-                    <img src="assets/images/my_login.png" alt="Capa My Finance" class="project__img">
-                    <img src="assets/images/My-dash.png" alt="Preview My Finance" class="project__hover-img">
+                    <article class="project__card">
+                        <div class="project__img-wrapper">
+                            <img src="assets/images/finance_login2.png" alt="Preview do App" class="project__img">
+                            <img src="assets/images/Captura de tela 2026-01-30 170742.png" alt="Preview Animado" class="project__hover-img">
+                        </div>
+                        <div class="project__data">
+                            <h3 class="project__title">Gestão de Empréstimos</h3>
+                            <p class="project__description">
+                                Plataforma de gestão de empréstimos em React (TypeScript), com motor de cálculo exclusivo para pagamentos parciais, juros compostos, dashboards de lucro real e gestão de multas.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project__card">
+                        <div class="project__img-wrapper">
+                            <img src="assets/images/ppm.jpg" alt="PPM Eurofarma" class="project__img">
+                        </div>
+                        <div class="project__data">
+                            <h3 class="project__title">PPM - Eurofarma</h3>
+                            <p class="project__description">
+                                API RESTful para o sistema de Gestão de Portfólio de Projetos (PPM). Distribuído via Docker container contendo a aplicação backend completa.
+                            </p>
+                            <div class="project__buttons-group">
+                                <a href="https://github.com/Heitornovaes/PPM-Api" target="_blank" class="project__button">Repositório <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project__card">
+                        <div class="project__img-wrapper">
+                            <img src="assets/images/Home.png" alt="App Gerador" class="project__img">
+                            <img src="assets/images/Gerador.png" alt="Preview App" class="project__hover-img">
+                        </div>
+                        <div class="project__data">
+                            <h3 class="project__title">Gerador de Senhas</h3>
+                            <p class="project__description">
+                                App mobile desenvolvido em Flutter para gerar senhas criptografadas e seguras. Integração completa com Firebase Auth e Cloud Firestore.
+                            </p>
+                            <div class="project__buttons-group">
+                                <a href="https://github.com/Heitornovaes/GeradorDeSenhas" target="_blank" class="project__button">Repositório <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project__card">
+                        <div class="project__img-wrapper">
+                            <img src="assets/images/Vortex.png" alt="Robô Vortex" class="project__img">
+                            <img src="assets/images/Arduino.png" alt="Arduino Code" class="project__hover-img">
+                        </div>
+                        <div class="project__data">
+                            <h3 class="project__title">Vortex - Robô de Combate</h3>
+                            <p class="project__description">
+                                Robô de combate controlado via Bluetooth (Arduino). Possui sistema de ataque automático com sensores frontais e arma ativa. Criado para o RoboCup da FIAP.
+                            </p>
+                        </div>
+                    </article>
+
                 </div>
+            </div>
+        </section>
 
-                <div class="project__data">
-                    <h3 class="project__title">My Finance</h3>
-                    <p class="project__description">
-                        O My Finance é um SaaS completo de gestão financeira pessoal (PWA) com controle de gastos, cartões de crédito, investimentos, metas e modo privacidade. Desenvolvido em HTML/JS Puro e Supabase.
-                    </p>
-                    <!-- 
-                    <div class="project__buttons-group">
-                         <a href="#" target="_blank" class="project__button">
-                            Ver Projeto <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#" target="_blank" class="project__button">
-                            Código <i class="fab fa-github"></i>
-                        </a>
-                    </div>-->
-                </div>
-            </article>
-
-            <article class="project__card">
-                <div class="project__img-wrapper">
-                    <img src="assets/images/finance_login2.png" alt="Preview do App" class="project__img">
-                    <img src="assets/images/Captura de tela 2026-01-30 170742.png" alt="Preview Animado" class="project__hover-img">
-                </div>
-
-                <div class="project__data">
-                    <h3 class="project__title">Gestão de Empréstimos</h3>
-                    <p class="project__description">
-                        Uma plataforma de gestão de empréstimos desenvolvida em React (TypeScript), destacando-se pelo seu motor de cálculo exclusivo para pagamentos parciais e juros compostos. O sistema oferece controle financeiro completo, dashboards de lucro real, gestão de despesas e automação de recibos e multas.
-                    </p>
-                    </div>
-            </article>
-
-            <article class="project__card">
-                <div class="project__img-wrapper">
-                    <img src="assets/images/ppm.jpg" alt="PPM Eurofarma" class="project__img">
-                </div>
-
-                <div class="project__data">
-                    <h3 class="project__title">PPM - Eurofarma</h3>
-                    <p class="project__description">
-                        API RESTful para o sistema de Gestão de Portfólio de Projetos (PPM). 
-                        Distribuído via Docker container contendo a aplicação backend completa para alta performance.
-                    </p>
-                    <div class="project__buttons-group">
-                        <a href="https://github.com/Heitornovaes/PPM-Api" target="_blank" class="project__button">
-                            Repositório <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="project__card">
-                <div class="project__img-wrapper">
-                    <img src="assets/images/Home.png" alt="App Gerador" class="project__img">
-                    <img src="assets/images/Gerador.png" alt="Preview App" class="project__hover-img">
-                </div>
-
-                <div class="project__data">
-                    <h3 class="project__title">Gerador de Senhas</h3>
-                    <p class="project__description">
-                        App mobile desenvolvido em Flutter para gerar senhas criptografadas e seguras. 
-                        Integração completa com Firebase Auth e Cloud Firestore para salvar histórico.
-                    </p>
-                    <div class="project__buttons-group">
-                        <a href="https://github.com/Heitornovaes/GeradorDeSenhas" target="_blank" class="project__button">
-                            Repositório <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="project__card">
-                <div class="project__img-wrapper">
-                    <img src="assets/images/Vortex.png" alt="Robô Vortex" class="project__img">
-                    <img src="assets/images/Arduino.png" alt="Arduino Code" class="project__hover-img">
-                </div>
-
-                <div class="project__data">
-                    <h3 class="project__title">Vortex - Robô de Combate</h3>
-                    <p class="project__description">
-                        Robô de combate controlado via Bluetooth (Arduino). Possui sistema de ataque automático com sensores frontais e arma ativa. Criado para o RoboCup da FIAP.
-                    </p>
-                </div>
-            </article>
-
-        </div>
-    </div>
-</section>
-
-<section id="designs" class="designs-section">
-    <div class="gradient-background">
-        <div class="gradient-sphere sphere-projects-1"></div> 
-        <div class="gradient-sphere sphere-projects-2"></div>
-    </div>
-    <div class="grid-overlay"></div>
-    <div class="noise-overlay"></div>
-
-    <div class="container-fluid">
-        <h2 class="section__title">Galeria Criativa</h2>
+        <section id="designs" class="designs-section">
+            <div class="gradient-background">
+                <div class="gradient-sphere sphere-projects-1"></div> 
+                <div class="gradient-sphere sphere-projects-2"></div>
+            </div>
+            <div class="grid-overlay"></div>
+            <div class="noise-overlay"></div>
         
-        <div class="category-wrapper">
-            <div class="category-header">
-                <h3>Social Media & Design</h3>
-                <div class="row-navigation">
-                    <button class="row-btn prev-row" data-target="posts-track">❮</button>
-                    <button class="row-btn next-row" data-target="posts-track">❯</button>
-                </div>
-            </div>
-
-            <div class="horizontal-track" id="posts-track">
+            <div class="container-fluid">
+                <h2 class="section__title">Galeria Criativa</h2>
                 
-                <div class="design-card design-card--full card-short">
-                    <div class="carousel-wrapper">
-                        <button class="carousel-btn prev-btn">❮</button>
-                        <div class="carousel-container">
-                            <img src="assets/images/design/images/carrossel_01.jpg" alt="Capa">
-                            <img src="assets/images/design/images/carrossel_02.jpg" alt="Página 2">
-                            <img src="assets/images/design/images/carrossel_03.jpg" alt="Página 3">
-                            <img src="assets/images/design/images/carrossel_04.jpg" alt="Página 4">
-                            <img src="assets/images/design/images/carrossel_05.jpg" alt="Página 5">
-                            <img src="assets/images/design/images/carrossel_06.jpg" alt="Página 6">
-                            <img src="assets/images/design/images/carrossel_07.jpg" alt="Página 7">
-                            <img src="assets/images/design/images/carrossel_08.jpg" alt="Página 8">
-                        </div>
-                        <button class="carousel-btn next-btn">❯</button>
-                    </div>
-                </div>
-
-                <div class="design-card design-card--full card-short">
-                    <div class="carousel-wrapper">
-                         <div class="carousel-container">
-                            <img src="assets/images/design/Flyer_rick.png" alt="Flyer Rick">
+                <div class="category-wrapper">
+                    <div class="category-header">
+                        <h3>Social Media & Design</h3>
+                        <div class="row-navigation">
+                            <button class="row-btn prev-row" data-target="posts-track">❮</button>
+                            <button class="row-btn next-row" data-target="posts-track">❯</button>
                         </div>
                     </div>
-                </div>
+        
+                    <div class="horizontal-track" id="posts-track">
+    
+                        <div class="design-card design-card--full card-short">
+                            <div class="carousel-wrapper">
+                                <button class="carousel-btn prev-btn">❮</button>
+                                <div class="carousel-container">
+                                    <img src="assets/images/design/images/carrossel_01.jpg" alt="Capa Mercosul">
+                                    <img src="assets/images/design/images/carrossel_02.jpg" alt="Página 2">
+                                    <img src="assets/images/design/images/carrossel_03.jpg" alt="Página 2">
+                                    <img src="assets/images/design/images/carrossel_04.jpg" alt="Página 2">
+                                    <img src="assets/images/design/images/carrossel_05.jpg" alt="Página 2">
+                                    <img src="assets/images/design/images/carrossel_06.jpg" alt="Página 2">
+                                    <img src="assets/images/design/images/carrossel_07.jpg" alt="Página 2">
+                                    <img src="assets/images/design/images/carrossel_08.jpg" alt="Página 2">
 
-                <div class="design-card design-card--full card-short">
-                    <div class="carousel-wrapper">
-                        <button class="carousel-btn prev-btn">❮</button>
-                        <div class="carousel-container">
-                            <img src="assets/images/design/images-fianance/Finance-Saas_01.jpg" alt="Capa">
-                            <img src="assets/images/design/images-fianance/Finance-Saas_02.jpg" alt="Página 2">
-                            <img src="assets/images/design/images-fianance/Finance-Saas_03.jpg" alt="Página 3">
+                                </div>
+                                <button class="carousel-btn next-btn">❯</button>
+                            </div>
                         </div>
-                        <button class="carousel-btn next-btn">❯</button>
-                    </div>
-                </div>
-
-                <div class="design-card design-card--full card-short">
-                    <div class="carousel-wrapper">
-                        <button class="carousel-btn prev-btn">❮</button>
-                        <div class="carousel-container">
-                            <img src="assets/images/design/images/carrossel_01.jpg" alt="Capa">
-                            <img src="assets/images/design/images/carrossel_02.jpg" alt="Página 2">
-                            <img src="assets/images/design/images/carrossel_03.jpg" alt="Página 3">
-                            <img src="assets/images/design/images/carrossel_04.jpg" alt="Página 4">
-                            <img src="assets/images/design/images/carrossel_05.jpg" alt="Página 5">
+                    
+                        <div class="design-card design-card--full card-short">
+                            <div class="carousel-wrapper">
+                                 <div class="carousel-container">
+                                    <img src="assets/images/design/Flyer_rick.png" alt="Flyer Rick">
+                                </div>
+                            </div>
                         </div>
-                        <button class="carousel-btn next-btn">❯</button>
+                    
+                        <div class="design-card design-card--full card-short">
+                            <div class="carousel-wrapper">
+                                <button class="carousel-btn prev-btn">❮</button>
+                                <div class="carousel-container">
+                                    <img src="assets/images/design/images-fianance/Finance-Saas_01.jpg" alt="Capa Finance">
+                                    <img src="assets/images/design/images-fianance/Finance-Saas_02.jpg" alt="Página 2">
+                                    <img src="assets/images/design/images-fianance/Finance-Saas_03.jpg" alt="Página 2">
+                                </div>
+                                <button class="carousel-btn next-btn">❯</button>
+                            </div>
+                        </div>
+                    
+                        <div class="design-card design-card--full card-short">
+                            <div class="carousel-wrapper">
+                                <div class="carousel-container">
+                                    <img src="assets/images/FiapPods.jpg" alt="Capa Planilhas">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="design-card design-card--full card-short">
+                            <div class="carousel-wrapper">
+                                <div class="carousel-container">
+                                    <img src="assets/images/FiapPods.jpg" alt="Exigências Técnicas">
+                                </div>
+                            </div>
+                        </div>
+                    
                     </div>
-                </div>
-
-            </div> </div>
-
-
-        <div class="category-wrapper">
-            <div class="category-header">
-                <h3>Motion Graphics & Vídeos</h3>
-                <div class="row-navigation">
-                    <button class="row-btn prev-row" data-target="videos-track">❮</button>
-                    <button class="row-btn next-row" data-target="videos-track">❯</button>
-                </div>
-            </div>
-
-            <div class="horizontal-track" id="videos-track">
                 
-                <div class="design-card design-card--full card-tall">
-                    <div class="video-container">
-                        <video controls loop muted poster="assets/images/design/capa_acore.jpg">
-                            <source src="assets/images/design/Video_acore.mp4" type="video/mp4">
-                            Seu navegador não suporta vídeo.
-                        </video>
+                </div>
+        
+                <div class="category-wrapper">
+                    <div class="category-header">
+                        <h3>Motion Graphics & Vídeos</h3>
+                        <div class="row-navigation">
+                            <button class="row-btn prev-row" data-target="videos-track">❮</button>
+                            <button class="row-btn next-row" data-target="videos-track">❯</button>
+                        </div>
+                    </div>
+        
+                    <div class="horizontal-track" id="videos-track">
+                        <div class="design-card design-card--full card-tall">
+                            <div class="video-container">
+                                <video controls loop muted poster="assets/images/design/capa_acore.jpg">
+                                    <source src="assets/images/design/Video_acore.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="design-card design-card--full card-tall">
+                            <div class="video-container">
+                                <video controls loop muted poster="assets/images/design/capa-valer.jpg">
+                                    <source src="assets/images/design/Video-valer.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="design-card design-card--full card-tall">
+                            <div class="video-container">
+                                <video controls loop muted poster="assets/images/design/capa_oak.png">
+                                    <source src="assets/images/design/Video_oak.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
-
-                <div class="design-card design-card--full card-tall">
-                    <div class="video-container">
-                        <video controls loop muted poster="assets/images/design/capa-valer.jpg">
-                            <source src="assets/images/design/Video-valer.mp4" type="video/mp4">
-                            Seu navegador não suporta vídeo.
-                        </video>
-                    </div>
-                </div>
-
-                <div class="design-card design-card--full card-tall">
-                    <div class="video-container">
-                        <video controls loop muted poster="assets/images/design/capa_oak.png">
-                            <source src="assets/images/design/Video_oak.mp4" type="video/mp4">
-                            Seu navegador não suporta vídeo.
-                        </video>
-                    </div>
-                </div>
-
-                <!--<div class="design-card design-card--full card-tall">
-                    <div class="video-container">
-                        <video controls loop muted poster="assets/images/design/capa_oak.png">
-                            <source src="assets/images/design/Video_oak.mp4" type="video/mp4">
-                            Seu navegador não suporta vídeo.
-                        </video>
-                    </div>
-                </div>
-
-            </div> </div>-->
-
-    </div>
-</section>
+        
+            </div>
+        </section>
 
         <section class="section section__contact" id="contact">
-
             <div class="gradient-background">
                 <div class="gradient-sphere sphere-contact-1"></div>
                 <div class="gradient-sphere sphere-contact-2"></div>
@@ -395,11 +330,10 @@ Possuo conhecimentos em desenvolvimento e em ferramentas de design e performance
     <footer class="footer">
         <div class="container footer__container">
             <p class="footer__copy">&copy; 2025 Heitor Novaes dos Santos. Todos os direitos reservados.</p>
-            </div>
+        </div>
     </footer>
 
     <script src="scripts/main.js"></script>
-    
     <script src="https://kit.fontawesome.com/91369c28dc.js" crossorigin="anonymous"></script>
 </body>
 </html>
