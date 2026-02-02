@@ -914,3 +914,29 @@ textarea.form__input {
     object-fit: cover;
     scroll-snap-align: center;
 }
+
+/* ========================================= */
+/* === AJUSTES RESPONSIVOS (CELULAR) === */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+    
+    /* Ajusta o Tamanho do Nome (Hero) */
+    .hero__title {
+        font-size: 3.2rem;       /* Reduz de 7rem para 3.2rem */
+        white-space: normal;     /* Permite que o nome quebre em duas linhas se precisar */
+        line-height: 1.1;        /* Ajusta o espaçamento entre as linhas */
+    }
+
+    /* Ajusta o Subtítulo */
+    .hero__subtitle {
+        font-size: 1.2rem;       /* Reduz um pouco para ficar proporcional */
+        margin-top: 0.5rem;
+    }
+
+    /* Ajuste extra para telas muito pequenas (ex: Galaxy Fold) */
+    @media screen and (max-width: 350px) {
+        .hero__title {
+            font-size: 2.5rem;
+        }
+    }
+}
